@@ -1,9 +1,10 @@
-import { Thumbnail } from './components/ui/Thumbnail'
+import { Login } from './pages/Login'
 
 function App() {
 	return (
 		<div>
-			<Thumbnail />
+			{/* <Thumbnail /> */}
+			<Login />
 		</div>
 	)
 }
