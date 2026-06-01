@@ -11,7 +11,7 @@ const NAV_ITEMS = [
 
 export const Header = () => {
 	return (
-		<header className="h-20 flex">
+		<header className="h-20 bg-white flex">
 			<div className="container flex items-center justify-between">
 				<Link to="/">
 					<img

@@ -2,6 +2,7 @@
 @import 'tw-animate-css';
 @import 'shadcn/tailwind.css';
 @import '@fontsource-variable/inter';
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Spline+Sans:wght@300..700&display=swap');
 
 @custom-variant dark (&:is(.dark *));
 
@@ -21,6 +22,9 @@
 	--sans: system-ui, 'Segoe UI', Roboto, sans-serif;
 	--heading: system-ui, 'Segoe UI', Roboto, sans-serif;
 	--mono: ui-monospace, Consolas, monospace;
+
+	--inter: 'Inter', sans-serif;
+	--spline-sans: 'Spline Sans', sans-serif;
 
 	/* Dark black colors */
 	--dark-black-50: #f8f9fa;
@@ -57,10 +61,10 @@
 	--yellow-500: #eaab5c;
 	--red-50: #ffebea;
 	--red-100: #ffc2bf;
-	--red-100: #ffa5a0;
-	--red-100: #ff7c74;
-	--red-100: #ff6259;
-	--red-100: #ff3b30;
+	--red-200: #ffa5a0;
+	--red-300: #ff7c74;
+	--red-400: #ff6259;
+	--red-500: #ff3b30;
 
 	/* font: 18px/145% var(--sans); */
 	letter-spacing: 0.18px;
@@ -160,6 +164,7 @@
 body {
 	margin: 0;
 	padding: 0;
+	background-color: #f7f7f7;
 }
 
 .container {
@@ -198,45 +203,48 @@ body {
 }
 
 @theme inline {
+	--font-inter: var(--inter);
+	--font-spline-sans: var(--spline-sans);
+
 	/* Dark black colors */
-	--color-dark-black-50: #f8f9fa;
-	--color-dark-black-100: #f1f3f4;
-	--color-dark-black-200: #e8eaed;
-	--color-dark-black-300: #dadce0;
-	--color-dark-black-400: #bdc1c6;
-	--color-dark-black-500: #9aa0a6;
+	--color-dark-black-50: var(--dark-black-50);
+	--color-dark-black-100: var(--dark-black-100);
+	--color-dark-black-200: var(--dark-black-200);
+	--color-dark-black-300: var(--dark-black-300);
+	--color-dark-black-400: var(--dark-black-400);
+	--color-dark-black-500: var(--dark-black-500);
 
 	/* Primary colors */
-	--color-primary-50: #fff2eb;
-	--color-primary-100: #ffd6c7;
-	--color-primary-200: #ffb09a;
-	--color-primary-300: #ff8a6e;
-	--color-primary-400: #ff6a45;
-	--color-primary-500: #f74b1a;
-	--color-primary-600: #d93f14;
-	--color-primary-700: #b53310;
-	--color-primary-800: #8f270c;
-	--color-primary-900: #6b1c08;
+	--color-primary-50: var(--primary-50);
+	--color-primary-100: var(--primary-100);
+	--color-primary-200: var(--primary-200);
+	--color-primary-300: var(--primary-300);
+	--color-primary-400: var(--primary-400);
+	--color-primary-500: var(--primary-500);
+	--color-primary-600: var(--primary-600);
+	--color-primary-700: var(--primary-700);
+	--color-primary-800: var(--primary-800);
+	--color-primary-900: var(--primary-900);
 
 	/* Additional colors */
-	--color-additional-green-50: #ebf9ee;
-	--color-additional-green-100: #c0eecc;
-	--color-additional-green-200: #a2e5b3;
-	--color-additional-green-300: #77d990;
-	--color-additional-green-400: #5dd27a;
-	--color-additional-green-500: #34c759;
-	--color-additional-yellow-50: #fff6e8;
-	--color-additional-yellow-100: #ffe7c2;
-	--color-additional-yellow-200: #ffd08f;
-	--color-additional-yellow-300: #ffb95c;
-	--color-additional-yellow-400: #f2a94f;
-	--color-additional-yellow-500: #eaab5c;
-	--color-additional-red-50: #ffebea;
-	--color-additional-red-100: #ffc2bf;
-	--color-additional-red-100: #ffa5a0;
-	--color-additional-red-100: #ff7c74;
-	--color-additional-red-100: #ff6259;
-	--color-additional-red-100: #ff3b30;
+	--color-additional-green-50: var(--green-50);
+	--color-additional-green-100: var(--green-100);
+	--color-additional-green-200: var(--green-200);
+	--color-additional-green-300: var(--green-300);
+	--color-additional-green-400: var(--green-400);
+	--color-additional-green-500: var(--green-500);
+	--color-additional-yellow-50: var(--yellow-50);
+	--color-additional-yellow-100: var(--yellow-100);
+	--color-additional-yellow-200: var(--yellow-200);
+	--color-additional-yellow-300: var(--yellow-300);
+	--color-additional-yellow-400: var(--yellow-400);
+	--color-additional-yellow-500: var(--yellow-500);
+	--color-additional-red-50: var(--red-50);
+	--color-additional-red-100: var(--red-100);
+	--color-additional-red-100: var(--red-200);
+	--color-additional-red-100: var(--red-300);
+	--color-additional-red-100: var(--red-400);
+	--color-additional-red-100: var(--red-500);
 
 	--font-heading: var(--font-sans);
 	--font-sans: 'Inter Variable', sans-serif;
