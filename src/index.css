@@ -162,6 +162,20 @@ body {
 	padding: 0;
 }
 
+.container {
+	@apply max-w-300 px-4 mx-auto;
+}
+
+.nav_icon {
+	fill: none;
+	stroke: white;
+	fill: white;
+
+	& path {
+		stroke: white;
+	}
+}
+
 .auth_container {
 	font-family: 'Spline Sans', sans-serif;
 	width: 100%;

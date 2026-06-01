@@ -6,8 +6,11 @@
 	],
 	"compilerOptions": {
 		"baseUrl": ".",
+		"ignoreDeprecations": "6.0",
 		"paths": {
-			"@/*": ["./src/*"]
+			"@/core/*": ["./src/core/*"],
+			"@/modules/*": ["./src/modules/*"],
+			"@/components/*": ["./src/components/*"]
 		}
 	}
 }
