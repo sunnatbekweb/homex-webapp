@@ -1,4 +1,3 @@
-// src/app/routes.tsx
 import { createBrowserRouter, Navigate } from 'react-router-dom'
 
 // Импортируем лейауты
@@ -8,11 +7,11 @@ import { DashboardLayout } from '@/components/layout/DashboardLayout'
 // Импортируем компоненты страниц напрямую из модулей
 import { LoginForm } from '@/modules/auth/components/LoginForm'
 import { RegisterForm } from '@/modules/auth/components/RegisterForm'
-import { MainPage } from '@/modules/main/components'
-import { MarketPage } from '@/modules/market/components'
-import { OrdersPage } from '@/modules/orders/components'
-import { ProfilePage } from '@/modules/profile/components'
-import { ToolsPage } from '@/modules/tools/components'
+import { MapContainer } from '@/modules/main/components/MapContainer'
+import { MarketContainer } from '@/modules/market/components/MarketContainer'
+import { OrdersContainer } from '@/modules/orders/components/OrdersContainer'
+import { ProfileContainer } from '@/modules/profile/components/ProfileContainer'
+import { ToolsContainer } from '@/modules/tools/components/ToolsContainer'
 
 export const router = createBrowserRouter([
 	{
@@ -23,7 +22,6 @@ export const router = createBrowserRouter([
 		]
 	},
 
-	// 2. Приватные роуты панели управления (Твои колонки из Figma)
 	{
 		path: '/',
 		element: <DashboardLayout />,
@@ -36,12 +34,12 @@ export const router = createBrowserRouter([
 						replace
 					/>
 				)
-			}, // Перенаправление с / на /main
-			{ path: 'main', element: <MainPage /> }, // Главный экран с картой
-			{ path: 'orders', element: <OrdersPage /> }, // Список заказов
-			{ path: 'tools', element: <ToolsPage /> }, // Инструменты/Автопарк
-			{ path: 'market', element: <MarketPage /> }, // Маркетплейс
-			{ path: 'profile', element: <ProfilePage /> } // Профиль пользователя
+			},
+			{ path: 'main', element: <MapContainer /> },
+			{ path: 'orders', element: <OrdersContainer /> },
+			{ path: 'tools', element: <ToolsContainer /> },
+			{ path: 'market', element: <MarketContainer /> },
+			{ path: 'profile', element: <ProfileContainer /> }
 		]
 	},
 

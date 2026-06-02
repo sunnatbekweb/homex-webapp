@@ -1,7 +1,7 @@
 import { Button } from '@/components/ui/button'
 import { OrderCard } from './OrderCard'
 
-export const OrdersPage = () => {
+export const OrdersContainer = () => {
 	return (
 		<section>
 			<div className="container">
