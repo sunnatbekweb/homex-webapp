@@ -1,7 +1,11 @@
+import { ProfilePage } from '.'
+
 export const ProfileContainer = () => {
 	return (
 		<section>
-			<div className="container">ProfileContainer</div>
+			<div className="container">
+				<ProfilePage />
+			</div>
 		</section>
 	)
 }

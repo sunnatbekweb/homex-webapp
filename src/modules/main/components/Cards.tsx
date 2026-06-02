@@ -53,22 +53,22 @@ export default function MobileAppUI() {
           <ServiceCard
             title="Konditsioner tamirlash"
             imageAlt="Konditsioner"
-            emojiPlaceholder="/public/images/conditsioner.png"
+            emojiPlaceholder="/images/conditsioner.png"
           />
           <ServiceCard
             title="Santexnika ishlari"
             imageAlt="Santexnika quvuri"
-            emojiPlaceholder="/public/images/santexnika.png"
+            emojiPlaceholder="/images/santexnika.png"
           />
           <ServiceCard
             title="Katyol tamirlash"
             imageAlt="Isitish qozoni"
-            emojiPlaceholder="/public/images/katyol.png"
+            emojiPlaceholder="/images/katyol.png"
           />
           <ServiceCard
             title="Elektrika ishlari"
             imageAlt="Rozetka va tok"
-            emojiPlaceholder="/public/images/elektrika.png"
+            emojiPlaceholder="/images/elektrika.png"
           />
         </div>
 
@@ -98,7 +98,7 @@ export default function MobileAppUI() {
         </div>
         <div className="w-[40%]">
           <img
-            src="/public/images/master-bolish.png"
+            src="/images/master-bolish.png"
             alt="Master bo'lish"
             className="h-full w-full rounded-r-[20px]"
           />
