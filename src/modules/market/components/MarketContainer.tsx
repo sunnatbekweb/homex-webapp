@@ -31,6 +31,7 @@ export const MarketContainer = () => {
 				<div className="flex gap-2.5 mb-5 font-spline-sans">
 					{categories.map(item => (
 						<Button
+							key={item.value}
 							variant={category === item.value ? 'default' : 'secondary'}
 							className={`rounded-[50px] ${item.value === 'all' ? 'bg-primary-500' : 'bg-white text-[#727272]'}`}
 							onClick={() => setCategory(item.value)}
@@ -40,7 +41,7 @@ export const MarketContainer = () => {
 					))}
 				</div>
 				<div className="grid grid-cols-4 gap-x-3.75 gap-y-5">
-					{[...Array(16)].map((_, index) => (
+					{[...Array(12)].map((_, index) => (
 						<MarketCard key={index} />
 					))}
 				</div>
